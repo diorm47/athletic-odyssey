@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./login-auth.css";
 import { ReactComponent as Exit } from "../../assets/icons/exit.svg";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function AuthModal({ setLoginModal, setAuthModal }) {
   const goToLogin = () => {
     setLoginModal(true);
     setAuthModal(false);
   };
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <>
       <div className="overline" onClick={() => setAuthModal(false)}></div>
-      <div className="modal_wrapper">
+      <div
+        className="modal_wrapper"
+        data-aos="fade-up"
+        data-aos-duration="600"
+      >
         <div className="modal_wrapper_top">
           <p>SIGN UP</p>
           <Exit onClick={() => setAuthModal(false)} />
