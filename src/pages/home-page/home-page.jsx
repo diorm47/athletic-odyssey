@@ -121,7 +121,7 @@ function HomePage({ setAuthModal }) {
             have expert advice and motivation right when you need it, making
             your fitness journey a seamless part of your lifestyle.
           </p>
-          <NavLink to="/about-us">
+          <NavLink to="/training">
             <button className="main_btn">
               <p>Learn more</p>
             </button>{" "}
