@@ -30,7 +30,8 @@
   text-align: left;
   position: relative;
 }
-.about_us_header img {
+.about_us_header video {
+  width: 100%;
   position: absolute;
   width: 110%;
   left: -10px;

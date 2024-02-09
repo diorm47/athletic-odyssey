@@ -1,17 +1,19 @@
 import React from "react";
 import "./about-us.css";
-import bg from "../../assets/images/about-us-bg.png";
 
 import card1 from "../../assets/images/about-us-card-1.png";
 import card2 from "../../assets/images/about-us-card-2.png";
 import card3 from "../../assets/images/about-us-card-3.png";
+import videoView from "../../assets/video.mp4";
 
 function AboutUs() {
   return (
     <div className="about_us_page">
       <div className="about_us_header">
         <div className="container">
-          <img src={bg} alt="" />
+          <video autoPlay loop muted>
+            <source src={videoView} type="video/mp4" />
+          </video>
           <p>Our Mission</p>
           <h1>
             Empower <br /> individuals to <br /> embark on <br /> a

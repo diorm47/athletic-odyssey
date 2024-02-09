@@ -3,16 +3,31 @@ import NavBar from "./components/nav-bar/nav-bar";
 import HomePage from "./pages/home-page/home-page";
 import Footer from "./components/footer/footer";
 import AboutUs from "./pages/about-us/about-us";
+import LoginModal from "./components/login-auth/login";
+import { useState } from "react";
+import AuthModal from "./components/login-auth/auth";
 
 function App() {
+  const [loginModal, setLoginModal] = useState(false);
+  const [authModal, setAuthModal] = useState(false);
   return (
     <div className="page_wrapper">
-      <NavBar />
+      <NavBar setLoginModal={setLoginModal} setAuthModal={setAuthModal} />
+      {loginModal ? (
+        <LoginModal setLoginModal={setLoginModal} setAuthModal={setAuthModal} />
+      ) : (
+        ""
+      )}
+      {authModal ? (
+        <AuthModal setLoginModal={setLoginModal} setAuthModal={setAuthModal} />
+      ) : (
+        ""
+      )}
 
       <div className="page_content">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/" element={<HomePage setAuthModal={setAuthModal} />} />
+          <Route path="/about-us" element={<AboutUs setAuthModal={setAuthModal} />} />
         </Routes>
       </div>
       <Footer />

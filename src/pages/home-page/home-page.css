@@ -9,7 +9,7 @@ header {
 }
 
 .header_content {
-  padding-top: 220px;   
+  padding-top: 220px;
 }
 .header_content h1 {
   font-family: SF700;
@@ -51,7 +51,6 @@ header {
 }
 .header_btns button {
   height: 45px;
-
 }
 .header_btns button p {
   font-size: 19px;
@@ -66,9 +65,8 @@ header {
   cursor: pointer;
 }
 
-
 .about_us {
-  padding: 60px 0 130px;
+  padding: 100px 0 130px;
   display: flex;
   align-items: flex-start;
 }
@@ -92,7 +90,7 @@ header {
   margin-bottom: 80px;
 }
 
-.about_us_right p {
+.about_us_right .about_us_right_desc {
   color: rgb(0, 0, 0);
   font-family: SF400;
   font-size: 20px;
@@ -100,6 +98,7 @@ header {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
+  margin-bottom: 25px;
 }
 
 .fitness_ideas_wrapper {
@@ -138,6 +137,36 @@ header {
   width: 409px;
   height: 276px;
   cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.fitnes_idea_left_card:hover .fitnes_idea_left_card_title,
+.fitnes_idea_cards_right:hover .fitnes_idea_left_card_title {
+  transition: all 0.4s ease;
+  transform: translateY(-100%);
+}
+.fitnes_idea_left_card_title,
+.fitnes_idea_left_card_description {
+  transition: all 0.4s ease;
+}
+.fitnes_idea_left_card_description {
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fitnes_idea_left_card_description p {
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+}
+.fitnes_idea_left_card:hover .fitnes_idea_left_card_description,
+.fitnes_idea_cards_right:hover .fitnes_idea_left_card_description {
+  transition: all 0.4s ease;
+  transform: translateY(-100%);
 }
 .fitnes_idea_cards_left {
   display: grid;
@@ -180,6 +209,8 @@ header {
   width: 392px;
   height: 552px;
   cursor: pointer;
+  transition: all 0.7s ease;
+  overflow: hidden;
 }
 .fitnes_idea_cards {
   display: flex;
@@ -416,8 +447,7 @@ header {
   gap: 20px;
 }
 .contacts_form .main_btn {
-    height: 57px;
-
+  height: 57px;
 }
 
 .contacts_form input {

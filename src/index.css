@@ -29,7 +29,9 @@ a {
 button {
   cursor: pointer;
   border: none;
+  transition: all 0.4s ease;
 }
+
 .container {
   max-width: 1250px;
   width: 100%;
@@ -52,8 +54,14 @@ button {
   line-height: 130%;
   letter-spacing: 0%;
   text-align: left;
-}
+  transition: all 0.4s ease;
 
+}
+.main_btn:hover {
+  transition: all 0.4s ease;
+  background: rgb(169, 35, 11);
+
+}
 .page_wrapper {
   overflow: hidden;
 }

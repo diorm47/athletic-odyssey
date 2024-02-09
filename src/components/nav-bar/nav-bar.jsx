@@ -3,7 +3,7 @@ import "./nav-bar.css";
 import logo from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 
-function NavBar() {
+function NavBar({ setLoginModal, setAuthModal }) {
   return (
     <nav>
       <div className="nav_wrapper container">
@@ -27,8 +27,10 @@ function NavBar() {
           </div>
         </div>
         <div className="nav_wrapper_right">
-          <p className="sign_in_btn">Sign in</p>
-          <button className="main_btn">
+          <p className="sign_in_btn" onClick={() => setLoginModal(true)}>
+            Sign in
+          </p>
+          <button className="main_btn" onClick={() => setAuthModal(true)}>
             <p>Register</p>
           </button>
         </div>
