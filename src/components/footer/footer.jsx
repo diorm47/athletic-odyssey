@@ -18,7 +18,7 @@ function Footer() {
         <div className="footer_wrapper_right">
           <div>
             <h4>Programs</h4>
-            <NavLink to="/">
+            <NavLink to="/training">
               <p>Training</p>
             </NavLink>
             <NavLink to="/">
@@ -30,7 +30,7 @@ function Footer() {
             <NavLink to="/about-us">
               <p>About us</p>
             </NavLink>
-            <NavLink to="/">
+            <NavLink to="/blog">
               <p>Blog</p>
             </NavLink>
           </div>
@@ -39,7 +39,7 @@ function Footer() {
             <NavLink to="/">
               <p>Fitness</p>
             </NavLink>
-            <NavLink to="/">
+            <NavLink to="/recipes">
               <p>Health Recipes</p>
             </NavLink>
           </div>

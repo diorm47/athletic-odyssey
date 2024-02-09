@@ -16,13 +16,13 @@ function NavBar({ setLoginModal, setAuthModal }) {
             <NavLink to="/about-us">
               <p>About us</p>
             </NavLink>
-            <NavLink to="#">
+            <NavLink to="/training">
               <p>Training</p>
             </NavLink>
-            <NavLink to="#">
+            <NavLink to="/recipes">
               <p>Recipes</p>
             </NavLink>
-            <NavLink to="#">
+            <NavLink to="/blog">
               <p>Blog</p>
             </NavLink>
           </div>

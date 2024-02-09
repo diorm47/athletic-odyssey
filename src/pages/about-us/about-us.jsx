@@ -12,6 +12,9 @@ function AboutUs() {
     AOS.init();
     AOS.refresh();
   }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0); // Переместить окно просмотра страницы в начало
+  }, []);
 
   return (
     <div className="about_us_page">

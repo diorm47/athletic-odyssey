@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ReactComponent as Arrow } from "../../assets/icons/arrow.svg";
 import "./home-page.css";
 
@@ -14,6 +14,10 @@ import faqImg from "../../assets/images/faq_right.png";
 import your_body from "../../assets/images/your-body.png";
 
 function HomePage({ setAuthModal }) {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Переместить окно просмотра страницы в начало
+  }, []);
+
   const [opened, setOpened] = useState();
   const faq = [
     {

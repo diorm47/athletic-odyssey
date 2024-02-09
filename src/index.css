@@ -65,3 +65,11 @@ button {
 .page_wrapper {
   overflow: hidden;
 }
+
+.empty_page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
