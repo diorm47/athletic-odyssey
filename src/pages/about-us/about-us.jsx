@@ -1,12 +1,18 @@
-import React from "react";
-import "./about-us.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 import card1 from "../../assets/images/about-us-card-1.png";
 import card2 from "../../assets/images/about-us-card-2.png";
 import card3 from "../../assets/images/about-us-card-3.png";
 import videoView from "../../assets/video.mp4";
+import "./about-us.css";
 
 function AboutUs() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="about_us_page">
       <div className="about_us_header">
@@ -22,7 +28,11 @@ function AboutUs() {
         </div>
       </div>
       <div className="about_us_page_cards ">
-        <div className="about_us_page_desc">
+        <div
+          className="about_us_page_desc"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <p>
             We're dedicated to transforming health and wellness, ensuring
             fitness is accessible and rewarding for all. Whether you're a
@@ -34,7 +44,11 @@ function AboutUs() {
         </div>
         <div className="about_us_page_card">
           <div className="about_us_page_card_left last">
-            <div className="about_us_page_card_text">
+            <div
+              className="about_us_page_card_text"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h3>Our Culture</h3>
               <p>
                 Our culture is to nurture and built a community that celebrates
@@ -49,15 +63,29 @@ function AboutUs() {
             </div>
           </div>
           <div className="about_us_page_card_right">
-            <img src={card1} alt="" />
+            <img
+              src={card1}
+              alt=""
+              data-aos="zoom-in-right"
+              data-aos-duration="1000"
+            />
           </div>
         </div>
         <div className="about_us_page_card">
           <div className="about_us_page_card_left ">
-            <img src={card2} alt="" />
+            <img
+              src={card2}
+              alt=""
+              data-aos="zoom-in-left"
+              data-aos-duration="1000"
+            />
           </div>
           <div className="about_us_page_card_right">
-            <div className="about_us_page_card_text">
+            <div
+              className="about_us_page_card_text"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h3>Our Values</h3>
               <p>
                 The core values revolves around equality, accountability and
@@ -74,7 +102,11 @@ function AboutUs() {
         </div>
         <div className="about_us_page_card">
           <div className="about_us_page_card_left last">
-            <div className="about_us_page_card_text">
+            <div
+              className="about_us_page_card_text"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <h3>Impact on Users</h3>
               <p>
                 Our culture is to nurture and built a community that celebrates
@@ -89,11 +121,16 @@ function AboutUs() {
             </div>
           </div>
           <div className="about_us_page_card_right">
-            <img src={card3} alt="" />
+            <img
+              src={card3}
+              alt=""
+              data-aos="zoom-in-left"
+              data-aos-duration="1000"
+            />
           </div>
         </div>
       </div>
-      <div className="stats">
+      <div className="stats" data-aos="fade-up" data-aos-duration="1000">
         <h2>By the Numbers</h2>
         <div className="stats_cards">
           <div className="stat_card">

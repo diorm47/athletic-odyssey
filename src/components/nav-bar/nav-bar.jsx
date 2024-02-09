@@ -1,7 +1,8 @@
+import "aos/dist/aos.css";
 import React from "react";
-import "./nav-bar.css";
-import logo from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/logo.png";
+import "./nav-bar.css";
 
 function NavBar({ setLoginModal, setAuthModal }) {
   return (

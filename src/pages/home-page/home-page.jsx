@@ -67,6 +67,7 @@ function HomePage({ setAuthModal }) {
   };
 
   const scrollToBlock = () => smoothScrollTo(blockRef.current);
+
   return (
     <>
       <header>
