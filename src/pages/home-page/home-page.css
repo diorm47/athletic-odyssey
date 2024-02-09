@@ -1,0 +1,441 @@
+header {
+  width: 100%;
+  height: 115vh;
+  background: url(../../assets/images/header.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header_content {
+  padding-top: 220px;   
+}
+.header_content h1 {
+  font-family: SF700;
+  font-size: 75px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.header_content h1 span {
+  color: rgb(215, 58, 30);
+}
+.header_content p {
+  color: rgb(255, 255, 255);
+  font-family: SF400;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  max-width: 770px;
+}
+
+.read_more_btn {
+  background: transparent;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 9px;
+}
+
+.header_btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.header_btns button {
+  height: 45px;
+
+}
+.header_btns button p {
+  font-size: 19px;
+}
+.scroll_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+}
+.scroll_btn svg {
+  cursor: pointer;
+}
+
+
+.about_us {
+  padding: 60px 0 130px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.about_us_left {
+  display: flex;
+  align-items: center;
+}
+.about_us_right {
+  padding-left: 60px;
+}
+.about_us_right h2 {
+  color: rgb(0, 0, 0);
+  font-family: SF700;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 74px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.about_us_right p {
+  color: rgb(0, 0, 0);
+  font-family: SF400;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.fitness_ideas_wrapper {
+  background: url(../../assets/images/fitnes-ideas/bg.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fitnes_ideas {
+  padding: 80px 0 175px;
+}
+.fitnes_ideas_title h2 {
+  color: rgb(255, 255, 255);
+  font-family: SF700;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 74px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.fitnes_ideas_title p {
+  color: rgb(255, 255, 255);
+  font-family: SF400;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.fitnes_idea_left_card {
+  width: 409px;
+  height: 276px;
+  cursor: pointer;
+}
+.fitnes_idea_cards_left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+.fitnes_idea_left_card:nth-child(1) {
+  background: url(../../assets/images/fitnes-ideas/card-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fitnes_idea_left_card:nth-child(2) {
+  background: url(../../assets/images/fitnes-ideas/card-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fitnes_idea_left_card:nth-child(3) {
+  background: url(../../assets/images/fitnes-ideas/card-4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fitnes_idea_left_card:nth-child(4) {
+  background: url(../../assets/images/fitnes-ideas/card-5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fitnes_idea_cards_right {
+  background: url(../../assets/images/fitnes-ideas/card-6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 392px;
+  height: 552px;
+  cursor: pointer;
+}
+.fitnes_idea_cards {
+  display: flex;
+  align-items: center;
+}
+.fitnes_idea_left_card_title {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fitnes_idea_left_card_title p {
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 33px;
+  letter-spacing: 0%;
+}
+
+.your_body {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  justify-content: center;
+  padding-top: 72px;
+}
+.your_body_left {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.your_body_right {
+  max-width: 720px;
+}
+.your_body_right_title h2 {
+  color: rgb(0, 0, 0);
+  font-family: SF700;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 53px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.your_body_right_title p {
+  color: rgb(0, 0, 0);
+  font-family: SF400;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  max-width: 600px;
+  margin-bottom: 36px;
+}
+
+.your_body_right_list {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.your_body_right_list div p {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+.articles_wrapper {
+  background: rgb(17, 17, 17);
+  padding: 87px 0 77px;
+}
+.articles_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.articles_block p {
+  color: rgb(255, 255, 255);
+  font-family: SF400;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 25px 0 40px;
+}
+
+.articles_block span {
+  color: rgb(161, 160, 160);
+  font-family: SF400;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.faq_section {
+  padding: 90px 0 100px;
+}
+.faq_section h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.faq_section_right {
+  max-width: 600px;
+}
+.faq_section_item {
+  padding: 30px 0;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+.faq_section_item:last-child {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.faq_item_question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq_item_question p {
+  color: rgb(52, 38, 38);
+  font-family: SF400;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.faq_section_item .faq_item_answer {
+  display: none;
+}
+.faq_item_open .faq_item_answer {
+  display: block;
+}
+.faq_item_answer p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.faq_item_question .close_faq {
+  display: none;
+}
+.faq_item_open .open_faq {
+  display: none;
+}
+.faq_item_open .close_faq {
+  display: block;
+}
+.faq_item_question svg {
+  cursor: pointer;
+}
+
+.faq_section_wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  justify-content: space-between;
+}
+.faq_section_right {
+  width: 600px;
+}
+.faq_section_right_img {
+  width: 50%;
+}
+.faq_section_right_img {
+  position: relative;
+}
+.faq_section_right_img img {
+  width: 950px;
+  position: absolute;
+  left: 0;
+}
+
+.contacts {
+  background: url(../../assets/images/contacts.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts_wrapper {
+  padding: 130px 0;
+}
+.contacts_wrapper h2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts_wrapper .contacts_desc {
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.contacts_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.contacts_form .main_btn {
+    height: 57px;
+
+}
+
+.contacts_form input {
+  box-sizing: border-box;
+  /* black txt */
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 9px;
+  width: 392px;
+  height: 57px;
+  /* white */
+  color: rgba(0, 31, 49, 0.6);
+  font-family: Open Sans;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-indent: 24px;
+  outline: none;
+  background: rgb(255, 255, 255);
+}
